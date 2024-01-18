@@ -1,0 +1,20 @@
+header {
+    text-align: center;
+} 
+
+#formulario {
+    width: 400px;
+    margin: auto;
+    background-color: darkgray;
+    border-radius: 10px;
+    padding: 1em;
+}
+#cesta-cutre, #cesta-guay {
+    width: 400px;
+    margin: auto;
+    background-color: rgb(149, 250, 193);
+    border-radius: 10px;
+    padding: 1em;
+    margin-top: 1em;
+    text-align: center;
+}
