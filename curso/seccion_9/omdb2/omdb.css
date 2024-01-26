@@ -1,0 +1,24 @@
+#ficha {
+    background-color: khaki;
+    width: 30%;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left:5px;
+}
+#ficha h1 {
+    padding : 10px 10px 0 10px;
+}
+#div-imagen {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#div-imagen img {
+    width: 80%;
+}
+
+#contenedor-fichas {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="ejemplo1.js"></script>
+    <link rel="stylesheet" href="ejemplo1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function escribir(){
+            console.log("Soy un script de JS");
+            document.querySelector("#receptor").innerHTML="Soy Jesús y estoy en una función";
+        } 
+    </script>
+</head>
+<body onload="escribir()">
+    <div id="receptor"></div>
+    <h1>Ejemplo 1</h1>
+    <h2 class="soynaranja">Nivel 2 - naranja</h2>
+    <h2 class="soynaranja">Nivel 2 - naranja</h2>
+    <h2 id="soyelverde">Nivel 2 - verde</h2>
+    <h2 id="soyelverde">Nivel 2 - verde</h2>
+
+</body>
+</html>

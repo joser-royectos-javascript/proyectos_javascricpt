@@ -1,0 +1,4 @@
+Introducción a JS
+Inclusión de JS en documentos HTML
+Declaración de variables
+Tipos de variables

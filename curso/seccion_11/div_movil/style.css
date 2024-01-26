@@ -1,0 +1,14 @@
+body {
+    margin: 0px;
+}
+
+#pie-pagina {
+    background-color: rgba(11, 218, 218, 0.48);
+    position: fixed;
+    height: 5em;
+    width: 100%;
+    bottom: 0px;
+    
+    transition: all;
+    transition-duration: 1s;
+}

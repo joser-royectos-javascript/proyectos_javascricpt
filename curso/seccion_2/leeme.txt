@@ -1,0 +1,21 @@
+Introducción a los objetos JS.
+Introducción a JSON
+Manejo de string
+
+Métodos (importantes) de string:
+
+endWidth - Determina si termina o no por una cadena
+includes - Determina si contiene una cadena
+split - Parte en tokens la cadena
+startsWidth - Determina si empieza o no por una cadena
+trim - elimina los espacios de los extremos
+toUpperCase - convierte a mayúsculas
+toLowerCase - convierte a minúsculas
+
+
+Atributo:
+*length - Proporciona la longitud
+
+
+Lista completa de métodos:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String

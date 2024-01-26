@@ -1,0 +1,1 @@
+{"titulo":"Titanic","director":"James Cameron","sinopsis":"Un barco que se hunde."}

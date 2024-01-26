@@ -1,0 +1,11 @@
+- Crear los documentos html/css/js de un página que muestra habitaciones
+de hotel.
+- Cada habitación contiene una fotografía, un precio y número de camas.
+- Cada habitación está dentro de un div.
+- Un mínimo de 5 habitaciones.
+- Algunos div de habitaciones serán de la clase oferta.
+- Algunos div de habitaciones serán de la clase cama-doble.
+- La página dispondrá de 3 botones:
+    - Ver todo.
+    - Ver ofertas.
+    - Ver habitaciones con camas dobles.

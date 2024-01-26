@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Client</title>
+</head>
+<body>
+    <div id="encabezado">
+        <select name="s-producto" id="s-producto">
+            <script>
+                for (let i=1;i<=100;i++){
+                    document.write(`<option value="${i}">${i}</option>`);
+                }
+            </script>        
+        </select>
+    </div>
+    <div id="Ficha">
+        <h1 id="title"></h1>
+        <div>
+            <img id="imagen" width="300px">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#s-producto").addEventListener("change",(evento)=>{
+        let selectedIndex = document.querySelector("#s-producto").value;
+        doRequest(selectedIndex);
+    })
+
+    function doRequest(index) {
+        mostrarLoading();
+        const URL = `https://dummyjson.com/products/${index}`;
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function () {
+            if (xmlHttp.readyState == 4) {
+                if (xmlHttp.status == 200){
+                    console.log(xmlHttp.responseText);
+                    mostrar(JSON.parse(xmlHttp.responseText));
+                } else {
+                    console.error("Ha ocurrido un error:" + xmlHttp.status);
+                    document.querySelector("#title").innerHTML="Error:" + xmlHttp.status;
+                }
+            }  
+        }
+        xmlHttp.open("GET", URL, true);
+        xmlHttp.send();
+    }
+    
+    function mostrarLoading(){
+        document.querySelector("#title").innerHTML="<img src='./loading.gif' width='100px'>";
+    }
+
+    function mostrar(producto){
+        document.querySelector("#title").innerHTML=producto.title;
+        //document.querySelector("#imagen").setAttribute("src",producto.thumbnail);
+        document.querySelector("#imagen").src=producto.thumbnail;
+    }
+    doRequest(1);
+</script>

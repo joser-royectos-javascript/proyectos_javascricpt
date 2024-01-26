@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTTP Client</title>
+</head>
+<body>
+    <div id="Ficha">
+        <h1 id="title"></h1>
+        <div>
+            <img id="imagen" with="100px">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    const URL = "https://dummyjson.com/products/100";
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function () {
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200){
+            console.log(xmlHttp.responseText);
+            mostrar(JSON.parse(xmlHttp.responseText));
+        }
+    }
+    xmlHttp.open("GET", URL, false);
+    xmlHttp.send();
+    
+    function mostrar(producto){
+        document.querySelector("#title").innerHTML=producto.title;
+        //document.querySelector("#imagen").setAttribute("src",producto.thumbnail);
+        document.querySelector("#imagen").src=producto.thumbnail;
+    }
+</script>
