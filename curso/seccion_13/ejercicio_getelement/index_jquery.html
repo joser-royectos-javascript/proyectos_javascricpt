@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores JQuery</title>
+</head>
+<body>
+    <div id="uno" panel="1">Uno</div>
+    <div class="ocupado" panel="2">Ocupado 1</div>
+    <div class="ocupado" panel="3">Ocupado 2</div>
+</body>
+</html>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script>
+    setTimeout(()=>{
+        $("#uno").css( "color", "red" );
+        $(".ocupado").css("background","yellow");
+    },3000);
+</script>

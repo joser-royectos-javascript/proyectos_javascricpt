@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="principal">
+        <span>Soy el principal</span>
+    </div>
+    <div class="importante">
+        <span>Soy importante 1</span>
+    </div>
+    <div class="importante">
+        <span>Soy importante 1</span>
+    </div>
+</body>
+</html>
+<script>
+    //Obtención por id
+    let htmlelement = document.getElementById("principal");//(1)
+    console.log(htmlelement);
+    //Obtención por clase
+    let coleccionElement = document.getElementsByClassName("importante");//(2)
+    console.log(coleccionElement);
+    //Obtener los elementos por etiqueta:
+    let coleccionEtiquetas = document.getElementsByTagName("div");//(3)
+    console.log(coleccionEtiquetas);
+
+    //(1)
+    document.querySelector("#principal");
+    //(2)
+    document.querySelectorAll(".importante");
+    //(3)
+    document.querySelectorAll("div");    
+
+
+</script>

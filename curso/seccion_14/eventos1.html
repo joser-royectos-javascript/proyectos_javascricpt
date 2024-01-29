@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>    
+</head>
+<body>
+    <button id="b1">Botón 1</button><button id="b2">Botón 2</button>
+</body>
+</html>
+<script>
+    //El body está cargado
+    document.querySelector("body").onload = ()=>{
+        console.log("Cargado");
+    }
+
+   document.querySelector("#b1").onclick = ()=> {//Esta asignación es eliminada por la siguiente
+        console.log("Acción 1 de b1");
+    };
+    document.querySelector("#b1").onclick = ()=> {//Esta segunda asignación elimina la anterior
+        console.log("Acción 2 de b1");
+    };
+
+    document.querySelector("#b2").addEventListener("click",()=>{//Con eventListener las asignaciones se acumulan
+        console.log("Acción 1 de b2");
+    });
+    document.querySelector("#b2").addEventListener("click",()=>{//Con eventListener las asignaciones se acumulan
+        console.log("Acción 2 de b2");
+    });
+</script>

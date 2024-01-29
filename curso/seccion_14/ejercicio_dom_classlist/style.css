@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+main {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;   
+}
+
+article {
+    flex: 0 0 19%;
+    margin: 2%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgb(88, 16, 91);
+    color: white;
+    border-radius: 10px;
+}
+
+.atenuado {
+    opacity: 0.2;
+} 
+
+article img {
+    max-width: 100%;
+}
+
+article h3 {
+    text-align: center; 
+}
+
+#div-buscador {
+    text-align: center;
+}
+
+#iBuscador {
+    text-align: center;
+    padding: 0.5em;
+}

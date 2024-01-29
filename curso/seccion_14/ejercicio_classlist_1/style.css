@@ -1,0 +1,14 @@
+#identificador {
+    padding: 0.5em;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.error1 {
+    box-shadow: 3px 3px yellow;
+}
+.error2, .error2:focus {
+    box-shadow: 3px 3px red;
+}
+.ok {
+    box-shadow: 3px 3px green;
+}
