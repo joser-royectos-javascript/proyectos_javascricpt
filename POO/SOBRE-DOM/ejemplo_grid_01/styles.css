@@ -1,0 +1,14 @@
+body{background-color: black;}
+.contenedor{
+    background: rgb(15, 14, 14);
+    border: 3px solid rgb(47, 47, 47);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+}
+
+.contenedor div {
+    background: rgb(207, 204, 204);
+    border: 2px solid rgb(69, 64, 64);
+    border-radius: 5px;
+}
