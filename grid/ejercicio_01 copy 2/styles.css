@@ -1,0 +1,15 @@
+div {
+    display: grid;
+    grid-template-columns: minmax(160px,1fr) 5fr;
+}
+
+aside {
+    border: 1px solid gray;
+}
+
+main {
+    border: 1px solid blue;
+}
+body {
+    margin: 0;
+}

@@ -1,10 +1,21 @@
 body{background-color: black;}
 .contenedor{
+    margin: 2%;
+    padding: 4%;
     background: rgb(15, 14, 14);
     border: 3px solid rgb(47, 47, 47);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: 1fr 3fr 2fr;
+    grid-template-columns: minmax(90px,2fr) 3fr 2fr;
+    /*  grid-template-columns: 25px repeat
+    (3,100px);  */
+        /*  grid-template-columns: 25px repeat
+    (3, 25px, 100px);  */ 
+    grid-template-rows: 2fr 2fr 2fr;
+    grid-auto-rows: 5vmax;
+    grid-auto-flow:column;
+
+
 }
 
 .contenedor div {
